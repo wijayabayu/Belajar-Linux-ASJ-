@@ -1,8 +1,11 @@
 Untuk Setting Network di Linux itu ada 2 =============>>>>>> DHCP (IP Address otomatis dari mesinnya atau wifinya) dan Static (IP address yang disetting manual sesuai gateway wifi)
-Langkah setting untuk Network DHCP :
+=====Langkah setting untuk Network DHCP :========
 1. Ketik command : sudo nano/etc/network/interfaces
 auto eth0
 iface eth0 inet dhcp
 2. Simpan dengan tekan : CTRL+X dan y lalu enter
 3. Systemctl restart networking
 4. Cek ip dengan ketik : ip -c a
+
+======Langkah setting untuk Network STATIC :=====
+1. Cek IP wifi di Windows >>> ketik command (ipconfig)
