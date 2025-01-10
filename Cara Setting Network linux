@@ -9,3 +9,5 @@ iface eth0 inet dhcp
 
 ======Langkah setting untuk Network STATIC :=====
 1. Cek IP wifi di Windows >>> ketik command (ipconfig)
+![Deskripsi Gambar](https://github.com/wijayabayu/Belajar-Linux-ASJ-/blob/main/Gambar/Static.png)
+
