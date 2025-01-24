@@ -1,5 +1,5 @@
 Untuk Setting Network di Linux itu ada 2 =============>>>>>> DHCP (IP Address otomatis dari mesinnya atau wifinya) dan Static (IP address yang disetting manual sesuai gateway wifi)
-=====Langkah setting untuk Network DHCP :========
+===============Langkah setting untuk Network DHCP :===================
 1. Ketik command : sudo nano/etc/network/interfaces
 auto eth0
 iface eth0 inet dhcp
@@ -8,7 +8,13 @@ iface eth0 inet dhcp
 4. Cek ip dengan ketik : ip -c a
 5. Jika IP belum berubah, silahkan ketik command : reboot =====> untuk restart debiannya
 
-======Langkah setting untuk Network STATIC :=====
+===================Langkah setting untuk Network STATIC :============================
 1. Cek IP wifi di Windows >>> ketik command (ipconfig)
-![Deskripsi Gambar](https://github.com/wijayabayu/Belajar-Linux-ASJ-/blob/main/Gambar/Static.png)
+2. Lihat IP GATEWAY nya pada jaringan wifi
+3. lalu masukkan ip Gateway nya ke debian dan masukkan IP Addressnya dengan ip host yang berbeda namun satu network
+4. Seperti ini : IP Gateway pada wifi (192.168.1.1)
+  allow-hotplug enp0s3
+  iface enp0s3 inet static 
+        address 192.168.1.2/24 <==== masukkan ip addres sesuai gateway namun ip belakang atau host nya berbeda
+        gateway 192.168.1.1 <======= masukkan ip gateway 
 
