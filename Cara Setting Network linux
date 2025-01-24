@@ -6,6 +6,7 @@ iface eth0 inet dhcp
 2. Simpan dengan tekan : CTRL+X dan y lalu enter
 3. Systemctl restart networking
 4. Cek ip dengan ketik : ip -c a
+5. Jika IP belum berubah, silahkan ketik command : reboot =====> untuk restart debiannya
 
 ======Langkah setting untuk Network STATIC :=====
 1. Cek IP wifi di Windows >>> ketik command (ipconfig)
